@@ -110,7 +110,7 @@ class SOM
     public function render($find = null)
     {
         if (null !== $find) {
-            $plot = $this->findBestMatchingUnit($find);
+            $find = $this->findBestMatchingUnit($find);
         }
 
         echo '<table cellpadding="0" cellspacing="0" border="0">';

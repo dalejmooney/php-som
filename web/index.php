@@ -20,7 +20,7 @@ function getRandomData($rows, $length = 3)
 }
 
 
-$SOM = new SOM(2000, 25, 25);
+$SOM = new SOM(2000, 50, 50);
 
-$SOM->epoch(getRandomData(5));
+$SOM->epoch(getRandomData(100));
 $SOM->render();
