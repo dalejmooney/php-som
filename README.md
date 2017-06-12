@@ -40,3 +40,7 @@ render a table with colours. This is dependant on weights being between 0 -> 255
 An example of SOM that would be produced would be.
 
 ![SOM example](https://github.com/dalejmooney/php-som/blob/master/web/SOM.png)
+
+If you run more iterations, then it will get better.
+
+![SOM example](https://github.com/dalejmooney/php-som/blob/master/web/SOM2.png)
