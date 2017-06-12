@@ -19,13 +19,18 @@ class SOM
     private $neighbourhoodRadius;
     /** @var  float */
     private $learningRate;
-    /** float */
+
+    /**
+     * The base learning rate.
+     */
     const LEARNING_RATE = 0.1;
 
 
     /**
      * SOM constructor.
-     * @param int $iterations
+     * @param int $iterations Number of iterations to train for.
+     * @param int $width Width of grid.
+     * @param int $height Height of grid.
      */
     public function __construct($iterations, $width, $height)
     {
@@ -40,6 +45,7 @@ class SOM
     }
 
     /**
+     * Train the SOM based on sample data.
      * @param array $data
      */
     public function epoch(array $data)
@@ -73,6 +79,7 @@ class SOM
     }
 
     /**
+     * Get the best matching node to the weights passed.
      * @param array $data
      * @return Node
      */
@@ -98,7 +105,7 @@ class SOM
     }
 
     /**
-     * Render as a table.
+     * Render as a table. This will by default use colours.
      */
     public function render($find = null)
     {

@@ -8,7 +8,11 @@ class Node
 
     /**
      * Node constructor.
-     * @param $numWeights
+     * @param int $top Top node position
+     * @param int $left Left node position
+     * @param int $right right node position
+     * @param int $bottom bottom node position
+     * @param int $numWeights Total number of weights to use.
      */
     public function __construct($top, $left, $right, $bottom, $numWeights)
     {
@@ -26,7 +30,8 @@ class Node
     }
 
     /**
-     * @return mixed
+     * Get the X cords of the node within grid.
+     * @return int
      */
     public function getX()
     {
@@ -34,7 +39,8 @@ class Node
     }
 
     /**
-     * @return mixed
+     * Get the Y cords of node within grid.
+     * @return int
      */
     public function getY()
     {
@@ -42,9 +48,10 @@ class Node
     }
 
     /**
+     * Adjust the weights of this node based on learning rate and inf.
      * @param array $data
-     * @param $learningRate
-     * @param $inf
+     * @param float $learningRate
+     * @param float $inf
      */
     public function adjustWeights(array $data, $learningRate, $inf)
     {
@@ -54,7 +61,8 @@ class Node
     }
 
     /**
-     * @param $inputWeights
+     * Get distance between this node and input weights.
+     * @param array $inputWeights
      * @return float
      */
     public function getDistance($inputWeights)
@@ -69,6 +77,7 @@ class Node
     }
 
     /**
+     * Get weights as a comma separated string.
      * @return string
      */
     public function getWeightAsString()
