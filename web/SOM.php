@@ -121,7 +121,7 @@ class SOM
                 $colour = $this->grid[$i][$j]->getWeightAsString();
                 $borderColour = $colour;
 
-                if (null !== $plot && $plot->getX() == $j && $plot->getY() == $i) {
+                if (null !== $find && $find->getX() == $j && $find->getY() == $i) {
                     $borderColour = '255,255,255';
                 }
 
