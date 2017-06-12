@@ -34,3 +34,9 @@ $SOM->render();
 
 Where ```getRandomData()``` will simply return random colour data to train SOM with. Render will then
 render a table with colours. This is dependant on weights being between 0 -> 255.
+
+**Example**
+
+An example of SOM that would be produced would be.
+
+![SOM example](https://github.com/dalejmooney/php-som/blob/master/web/SOM.png)
